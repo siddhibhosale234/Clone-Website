@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon_io1/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <title>Products</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .info{
+            height: 7vh;
+            width: 100%;
+            background-color: rgb(249, 143, 45);
+            color: white;
+            font-size: xx-small;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .trademark{
+            height: 5vh;
+            width: 100%;
+            font-size: xx-small;
+            color: gray;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+        }
+        nav{
+            height: 20vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: sticky;
+        }
+        nav img{
+            height: 15vh;
+            width: 15vh;
+        }
+        nav ul{
+            color: rgb(77, 76, 76);
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin-left: 40px;
+        }
+        .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: auto;
+        }
+
+        .nav-right input {
+        height: 5vh;
+        padding-left: 10px;
+        width: 25vh;
+        }
+        .shopby{
+            height: 5vh;
+            width: 100%;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .category{
+            height: 60vh;
+            width: 100%;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .category img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .band{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            height: 30vh;
+            width: 100%;
+            padding: 0 5%;
+            column-gap: 8px;
+            align-items: center;
+        }
+        .products{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 0.5fr 1fr 0.5fr;
+        }
+        .products img{
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+        }
+         #ul a{
+            color: rgb(77, 76, 76);
+            text-decoration: none;
+        }
+        @media (max-width:768px){
+            nav #ul{
+                display: none !important;
+            }
+            .info{
+                font-size: 0.5em;
+            }
+            input{
+                margin-left: 0;
+                width: 100%;
+            }
+            .category img{
+                object-fit: cover;
+                height: auto;
+                width: 100%;
+            }
+            .category{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                height: auto;
+                gap: 10px;
+            }
+            .nav-right {
+            width: 100%;
+            gap: 10px;
+            flex-wrap: wrap;
+            }
+            .band div{
+                height: auto;
+                width: 100%;
+            }
+            .band select{
+                height: auto;
+                width: 100%;
+                font-size: 0.6em;
+            }
+        }
+        #ul:hover{
+            color: rgb(249, 143, 45);
+        }
+        #ul:hover a{
+            color: rgb(249, 143, 45);
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(360deg);
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>WELCOME TO HIMALAYA WELLNESS INDIA! <a href="" style="color: white;">Got Questions?Whatsapp Us:99759xxxxx</a></h1>
+    </div>
+    <div class="trademark">
+        <i class="fa-solid fa-earth-asia" style="color: rgb(86, 171, 240);"></i>
+        <h2>Himalaya Global Holdings Ltd.(Our Parent)</h2>
+    </div>
+    <nav>
+        <img src="./himalayalogo.avif" alt="">
+        
+        <ul id="ul">
+            <li><a href="cloneabout.html">About Us</a></li>
+            <li><a href="cloneresearch.html">Our Research</a></li>
+            <li><a href="clone.html">Products</a></li>
+            <li>Store Locator</li>
+            <li>CSR</li>
+        </ul>
+        <div class="nav-right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+    <div class="shopby">
+    <h1>Shop By Category</h1>
+    </div>
+    <div class="category">
+        <img src="i1.avif" alt="">
+        <img src="i2.avif" alt="">
+        <img src="i3.avif" alt="">
+        <img src="i4.avif" alt="">
+        <img src="i5.avif" alt="">
+        <img src="i6.avif" alt="">
+        <img src="i7.avif" alt="">
+    </div>
+    <img src="Care_icon.svg" alt="" style="height: 10vh; width: 10vw; position: sticky; animation-name: rotate; animation-duration: 10s; animation-iteration-count: infinite;">
+    <div class="band">
+        <div style="height: 15%; width: 40%; justify-self: center; display: flex; align-items: center; justify-content: center; border: 1px solid gray; border-radius: 5px; font-size: 1em; gap: 10px;">
+        <i class="fa-solid fa-filter" style="color: #555;"></i>
+        <span>FILTER</span>
+        </div>
+        <h3 style="justify-self: center;">PRODUCTS</h3>
+    <select name="" id="" style="height: 15%; width: 60%; justify-self: center;">
+        <option value="" selected hidden>Featured</option>
+        <option value="">Sort</option>
+        <option value="">Bestselling</option>
+        <option value="">Alphabetically A-Z</option>
+        <option value="">Alphabetically Z-A</option>
+        <option value="">Price, High-Low</option>
+        <option value="">Price, Low-High</option>
+    </select>
+    </div>
+    <div class="products">
+        <img src="./7918819-2_Himalaya-Purifying-Neem-Face-Wash-New-Design-50ml_FOP_1800x1800.webp" alt="" onmouseover="this.src='Neem-facewash-a_-banner-08_1800x1800.webp'" onmouseout="this.src='7918819-2_Himalaya-Purifying-Neem-Face-Wash-New-Design-50ml_FOP_1800x1800.webp'">
+        <img src="./NaturalGlowKesar50g-Tube_Front_1800x1800.webp" alt="" onmouseover="this.src='NaturalGlowKesar50g-Tube_Back_1800x1800.webp'" onmouseout="this.src='NaturalGlowKesar50g-Tube_Front_1800x1800.webp'">
+        <img src="7405112-2_Moisturising-Aloe-Vera-Face-Wash_100ml_FOP_1800x1800.webp" alt="" onmouseover="this.src='Aloe-Vera-Face-Wash_Catalogue-1_1800x1800.webp'" onmouseout="this.src='7405112-2_Moisturising-Aloe-Vera-Face-Wash_100ml_FOP_1800x1800.webp'">
+        <button style="background-color: rgb(4, 54, 4); color: white; height: 10vh; width: 10vw; border-bottom-left-radius: 70%; border-top-right-radius: 70%; justify-self: center;"  data-count="0" onclick="add(this)">ADD TO CART</button>
+        <button style="background-color: rgb(4, 54, 4); color: white; height: 10vh; width: 10vw; border-bottom-left-radius: 70%; border-top-right-radius: 70%; justify-self: center;" data-count="0" onclick="add(this)">ADD TO CART</button>
+        <button style="background-color: rgb(4, 54, 4); color: white; height: 10vh; width: 10vw; border-bottom-left-radius: 70%; border-top-right-radius: 70%; justify-self: center;" data-count="0" onclick="add(this)">ADD TO CART</button>
+         <img src="./nourishing-skin-cream_1800x1800.webp" alt="">
+        <img src="./MOISTURIZIN-ALOE-VERA-FACE-GEL-100ML_1800x1800.webp" alt="" onmouseover="this.src='PDP-BANNERS-02_1800x1800.webp'" onmouseout="this.src='MOISTURIZIN-ALOE-VERA-FACE-GEL-100ML_1800x1800.webp'">
+        <img src="7555398-3_Himalaya-Tan-Removal-Orange-Face-Wash_50ml_FOP_1800x1800.webp" alt="" onmouseover="this.src='Tan-Removal-Orange-Face-Wash-08_1800x1800.webp'" onmouseout="this.src='7555398-3_Himalaya-Tan-Removal-Orange-Face-Wash_50ml_FOP_1800x1800.webp'">
+        <button style="background-color: rgb(4, 54, 4); color: white; height: 10vh; width: 10vw; border-bottom-left-radius: 70%; border-top-right-radius: 70%; justify-self: center;" data-count="0" onclick="add(this)">ADD TO CART</button>
+        <button style="background-color: rgb(4, 54, 4); color: white; height: 10vh; width: 10vw; border-bottom-left-radius: 70%; border-top-right-radius: 70%; justify-self: center;" data-count="0" onclick="add(this)">ADD TO CART</button>
+        <button style="background-color: rgb(4, 54, 4); color: white; height: 10vh; width: 10vw; border-bottom-left-radius: 70%; border-top-right-radius: 70%; justify-self: center;" data-count="0" onclick="add(this)">ADD TO CART</button>
+        <script>
+            function add(btn) {
+                let count= parseInt(btn.dataset.count);
+                count++;
+                btn.dataset.count=count;
+                btn.innerText=count;
+            }
+        </script>
+    </div>
+</body>
+</html>

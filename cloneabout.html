@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" href="./favicon_io1/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+        <style>
+     *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 20vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: sticky;
+        }
+        nav img{
+            height: 15vh;
+            width: 15vh;
+        }
+        nav ul{
+            color: rgb(77, 76, 76);
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin-left: 40px;
+        }
+        .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: auto;
+        }
+
+        .nav-right input {
+        height: 5vh;
+        padding-left: 10px;
+        width: 25vh;
+        }
+        #ul a{
+            color: rgb(77, 76, 76);
+            text-decoration: none;
+        }
+        .space{
+            height: 40vh;
+            width: 100%;
+        }
+        .page{
+            display: grid;
+            grid-template-columns: 1fr 1fr 3fr 3fr;
+            grid-template-rows: auto 1fr;
+            background-color: rgb(213, 211, 211);
+            color: rgb(79, 79, 79);
+            width: 100%;
+            height: auto;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .carousel-inner img{
+            height: 500px;
+            width: 100%;
+        }
+         @media (max-width:768px){
+            nav #ul{
+                display: none !important;
+            }
+            .info{
+                font-size: 0.5em;
+            }
+            input{
+                margin-left: 0;
+                width: 100%;
+            }
+            .nav-right {
+            width: 100%;
+            gap: 10px;
+            flex-wrap: wrap;
+            }
+        }
+        #ul:hover{
+            color: rgb(249, 143, 45);
+        }
+        #ul:hover a{
+            color: rgb(249, 143, 45);
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./himalayalogo.avif" alt="">
+        
+        <ul id="ul">
+            <li><a href="cloneabout.html">About Us</a></li>
+            <li><a href="cloneresearch.html">Our Research</a></li>
+            <li><a href="index.html">Products</a></li>
+            <li>Store Locator</li>
+            <li>CSR</li>
+        </ul>
+        <div class="nav-right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-user"></i>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="about1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about4.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about5.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about6.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about7.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="about8.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> 
+<div class="space">
+        <img src="Care_icon.svg" alt="" style="height: 10vh; width: 10vw; position: sticky; animation-name: rotate; animation-duration: 10s; animation-iteration-count: infinite;">
+    </div>
+<div class="page">
+        <div style="gap: 10px; display: flex; flex-direction: column;">
+            <h2 style="justify-self: center;">QUICK LINKS</h2>
+            <br><br>
+            <ul style="list-style: none; justify-self: center;">
+                <li>Ask the experts</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+                <li>FAQs</li>
+                <li>Health Help</li>
+                <li>Herb Finder</li>
+                <li>Loyalty Program</li>
+                <li>Research Papers</li>
+                <li>Store Locator</li>
+                <li>Refund Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h2 style="justify-self: center;">POLICIES</h2>
+            <br><br>
+            <ul style="list-style: none; justify-self: center;">
+            <li>Shipping</li>
+            <li>Returns and Cancellation</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li></ul>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+        <h2 style="justify-self: center;">SUBSCRIBE TO OUR NEWSLETTER!</h2>
+        <br>
+        <p style="justify-self: center;">By entering your email, you agree to our Terms of Service and Privacy Policy.</p>
+        <div>
+        <input type="text" placeholder="Enter your email" style="border-top: none; border-left: none; border-right: none; border-bottom-width: 3px; background-blend-mode: normal;">
+        <i class="fa-solid fa-envelope"></i>
+        </div>
+        <br>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+        <div style="display: flex; flex-direction: column;">
+            <h2>CONTACT US</h2>
+            <br>
+            <ul style="list-style: none;">
+                <li>
+                    Himalaya Wellness Company, Makali, Bengaluru - 562162
+                </li>
+                <br>
+                <li>Call Us: 1–800–208–1930 <br>
+Mon-Fri: 9:00am - 5:00pm</li>
+<br>
+                    <li>Email Us: <a href="" style="color: rgb(79, 79, 79);">contactus@himalayawellness.com</a></li>
+                    <br>
+                    <li>WhatsApp Us: 89518 91930</li>
+                    <br>
+                    <li><a href="" style="color: rgb(79, 79, 79);">Report Product Related Issues</a></li>
+            </ul>
+        </div>
+        <p style="grid-column: 1/5;">© 2025 Himalaya Wellness Company. All Rights Reserved.
+<br><br>
+Information on this website is provided for informational purposes and is not a substitute for advice from your own physician or other medical professionals.This website is meant for use by Indian residents only. The product pack shots on the website are for representation purposes only.The actual product may have slight variations in appearance and price.</p>
+    </div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
